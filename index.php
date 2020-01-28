@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<title>Nathanael Shermett &nbsp;|&nbsp; Software Developer · Pianist · Veteran</title>
 
@@ -56,7 +56,7 @@
 
 		<!-- For SEO and other web crawlers. -->
 		<div id="bio">
-			<img src="images/Nathanael.png">
+			<img src="images/Nathanael.png" alt="Nathanael Shermett Professional Portrait">
 			<p>
 				Nathanael Shermett is a professional web and software developer.
 			</p>
