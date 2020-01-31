@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Nathanael Shermett &nbsp;|&nbsp; Software Developer · Pianist · Veteran</title>
+		<title>Nathanael Shermett | Web &amp; Software Guru</title>
 
 		<meta name="author" content="Nathanael Shermett">
 		<meta name="description" content="Nathanael Shermett is a professional web and software developer.">
