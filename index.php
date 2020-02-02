@@ -75,9 +75,9 @@
 	</ul>
 
 	<div id="social">
-		<span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><a target="_blank" href="https://www.linkedin.com/in/nathanaelshermett" class="fa fa-linkedin fa-stack-1x"></a></span>
-		<span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><a target="_blank" href="https://github.com/NathanaelGit" class="fa fa-github fa-stack-1x"></a></span>
-		<span style="display:none;" class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><a id="email_icon" target="_blank" href="" class="fa fa-envelope fa-stack-1x"></a></span>
+		<span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><a target="_blank" href="https://www.linkedin.com/in/NathanaelShermett" title="LinkedIn" class="fa fa-linkedin fa-stack-1x"></a></span>
+		<span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><a target="_blank" href="https://github.com/Nathanael-Shermett" title="GitHub" class="fa fa-github fa-stack-1x"></a></span>
+		<span style="display:none;" class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><a id="email_icon" target="_blank" href="" title="Email" class="fa fa-envelope fa-stack-1x"></a></span>
 	</div>
 
 	<div id="contact">
