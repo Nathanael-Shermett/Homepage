@@ -18,12 +18,10 @@
 	<!-- Schema.org Stuff -->
 	<script type='application/ld+json'>
 		{
-			"@context" :      "https://schema.org/Person",
 			"@type" :         "Person",
 			"givenName" :     "Nathanael",
 			"familyName" :    "Shermett",
 			"alumniOf" :      {
-				"@context" : "https://schema.org/CollegeOrUniversity",
 				"@type" :    "CollegeOrUniversity",
 				"name" :     "Arizona State University"
 			},
@@ -31,34 +29,28 @@
 			"description" :   "Nathanael Shermett is a full-Stack web application and software developer, a pianist, and a veteran. He has 15+ years of experience in the software industry. He is passionate about technology (especially artificial intelligence), learning, and developing innovative ideas.",
 			"hasCredential" : [
 				{
-					"@context" :           "https://schema.org/EducationalOccupationalCredential",
 					"@type" :              "EducationalOccupationalCredential",
 					"name" :               "B.S. Criminology and Criminal Justice",
 					"credentialCategory" : ["Degree", "Bachelor of Science"],
 					"recognizedBy" :       {
-						"@context" : "https://schema.org/CollegeOrUniversity",
 						"@type" :    "CollegeOrUniversity",
 						"name" :     "Arizona State University"
 					}
 				},
 				{
-					"@context" :           "https://schema.org/EducationalOccupationalCredential",
 					"@type" :              "EducationalOccupationalCredential",
 					"name" :               "B.A. Psychology",
 					"credentialCategory" : ["Degree", "Bachelor of Arts"],
 					"recognizedBy" :       {
-						"@context" : "https://schema.org/CollegeOrUniversity",
 						"@type" :    "CollegeOrUniversity",
 						"name" :     "Arizona State University"
 					}
 				},
 				{
-					"@context" :           "https://schema.org/EducationalOccupationalCredential",
 					"@type" :              "EducationalOccupationalCredential",
 					"name" :               "B.A. Spanish (linguistics)",
 					"credentialCategory" : ["Degree", "Bachelor of Arts"],
 					"recognizedBy" :       {
-						"@context" : "https://schema.org/CollegeOrUniversity",
 						"@type" :    "CollegeOrUniversity",
 						"name" :     "Arizona State University"
 					}
