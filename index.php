@@ -5,7 +5,8 @@
 
 	<meta name="author" content="Nathanael Shermett">
 	<meta name="description" content="Nathanael Shermett is a professional web and software developer.">
-	<meta name="keywords" content="Nathanael Shermett, Shermett, Soldier, Web Developer, Software Developer, Pianist, PHP, C#, C++, .NET, Symfony, CodeIgniter, MySQL, HTML5, CSS3, JavaScript, jQuery, Christian">
+	<meta name="keywords"
+		  content="Nathanael Shermett, Shermett, Soldier, Web Developer, Software Developer, Pianist, PHP, C#, C++, .NET, Symfony, CodeIgniter, MySQL, HTML5, CSS3, JavaScript, jQuery, Christian">
 	<meta name="revisit-after" content="3 days">
 	<meta name="robots" content="index, follow">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -17,16 +18,101 @@
 	<!-- Schema.org Stuff -->
 	<script type='application/ld+json'>
 		{
-			"@context": "http://www.schema.org",
-			"@type": "person",
-			"name": "Nathanael Shermett",
-			"birthPlace": "Tucson, Arizona",
-			"jobTitle": "Software Developer",
-			"jobTitle": "Web Developer",
-			"height": "5 feet 11 inches",
-			"memberOf": "United States Army",
-			"image": "images/Nathanael.png",
-			"url": "http://nathanael.shermett.me"
+			"@context" :      "https://schema.org/Person",
+			"@type" :         "Person",
+			"givenName" :     "Nathanael",
+			"familyName" :    "Shermett",
+			"alumniOf" :      {
+				"@context" : "https://schema.org/CollegeOrUniversity",
+				"@type" :    "CollegeOrUniversity",
+				"name" :     "Arizona State University"
+			},
+			"birthPlace" :    "Tucson, Arizona",
+			"description" :   "Nathanael Shermett is a full-Stack web application and software developer, a pianist, and a veteran. He has 15+ years of experience in the software industry. He is passionate about technology (especially artificial intelligence), learning, and developing innovative ideas.",
+			"hasCredential" : [
+				{
+					"@context" :           "https://schema.org/EducationalOccupationalCredential",
+					"@type" :              "EducationalOccupationalCredential",
+					"name" :               "B.S. Criminology and Criminal Justice",
+					"credentialCategory" : ["Degree", "Bachelor of Science"],
+					"recognizedBy" :       {
+						"@context" : "https://schema.org/CollegeOrUniversity",
+						"@type" :    "CollegeOrUniversity",
+						"name" :     "Arizona State University"
+					}
+				},
+				{
+					"@context" :           "https://schema.org/EducationalOccupationalCredential",
+					"@type" :              "EducationalOccupationalCredential",
+					"name" :               "B.A. Psychology",
+					"credentialCategory" : ["Degree", "Bachelor of Arts"],
+					"recognizedBy" :       {
+						"@context" : "https://schema.org/CollegeOrUniversity",
+						"@type" :    "CollegeOrUniversity",
+						"name" :     "Arizona State University"
+					}
+				},
+				{
+					"@context" :           "https://schema.org/EducationalOccupationalCredential",
+					"@type" :              "EducationalOccupationalCredential",
+					"name" :               "B.A. Spanish (linguistics)",
+					"credentialCategory" : ["Degree", "Bachelor of Arts"],
+					"recognizedBy" :       {
+						"@context" : "https://schema.org/CollegeOrUniversity",
+						"@type" :    "CollegeOrUniversity",
+						"name" :     "Arizona State University"
+					}
+				}
+			],
+			"gender" :        "http://schema.org/Male",
+			"height" :        "71 inches",
+			"knowsAbout" :    [
+				"Software Development",
+				"Web Development",
+				"Mobile App Development",
+				"Database Design",
+				"Graphic Design",
+				"PHP",
+				"Symfony",
+				"CodeIgniter",
+				"C#",
+				"C++",
+				"JavaScript",
+				"Perl",
+				"Python",
+				"MySQL",
+				"T-SQL",
+				"SQL",
+				"HTML5",
+				"SCSS",
+				"CSS",
+				"XAMPP",
+				"Git",
+				"Doctrine",
+				"ASP.NET",
+				".NET Framework",
+				"Microsoft Azure",
+				"Excel",
+				"Object-Oriented Programming",
+				"Criminology",
+				"Psychology",
+				"Spanish",
+				"Military",
+				"Writing",
+				"Christianity"
+			],
+			"knowsLanguage" : ["en", "es"],
+			"image" :         "http://nathanael.shermett.me/images/Nathanael.png",
+			"jobTitle" :      ["Software Developer", "Web Developer", "Operations Manager"],
+			"memberOf" :      ["United States Army", "New York University"],
+			"url" :           "http://nathanael.shermett.me",
+			"sameAs" :        [
+				"https://www.linkedin.com/in/nathanaelshermett",
+				"https://github.com/Nathanael-Shermett",
+				"https://twitter.com/NathanaelTweets",
+				"https://www.facebook.com/nathanael.shermett",
+				"https://www.instagram.com/nathanael.shermett"
+			]
 		}
 	</script>
 
@@ -52,43 +138,44 @@
 </head>
 <body>
 
-	<h1>Nathanael Shermett</h1>
+<h1>Nathanael Shermett</h1>
 
-	<!-- For SEO and other web crawlers. -->
-	<div id="bio">
-		<img src="images/Nathanael.png" alt="Nathanael Shermett Professional Portrait">
-		<p>
-			Nathanael Shermett is a professional web and software developer.
-		</p>
-	</div>
+<ul id="tagline">
+	<li>
+		Developer
+	</li>
+	<li>
+		Pianist
+	</li>
+	<li>
+		Veteran
+	</li>
+</ul>
 
-	<ul id="tagline">
-		<li>
-			Developer
-		</li>
-		<li>
-			Pianist
-		</li>
-		<li>
-			Veteran
-		</li>
-	</ul>
+<div id="social">
+	<span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><a target="_blank"
+																			href="https://www.linkedin.com/in/NathanaelShermett"
+																			title="LinkedIn"
+																			class="fa fa-linkedin fa-stack-1x"></a></span>
+	<span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><a target="_blank"
+																			href="https://github.com/Nathanael-Shermett"
+																			title="GitHub"
+																			class="fa fa-github fa-stack-1x"></a></span>
+	<span style="display:none;" class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><a id="email_icon"
+																								  target="_blank"
+																								  href="" title="Email"
+																								  class="fa fa-envelope fa-stack-1x"></a></span>
+</div>
 
-	<div id="social">
-		<span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><a target="_blank" href="https://www.linkedin.com/in/NathanaelShermett" title="LinkedIn" class="fa fa-linkedin fa-stack-1x"></a></span>
-		<span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><a target="_blank" href="https://github.com/Nathanael-Shermett" title="GitHub" class="fa fa-github fa-stack-1x"></a></span>
-		<span style="display:none;" class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><a id="email_icon" target="_blank" href="" title="Email" class="fa fa-envelope fa-stack-1x"></a></span>
-	</div>
+<div id="contact">
+	<span class="text"></span>
+	<a href="#" id="email_link" target="_blank" class="email" data-user="leanahtan" data-website="em.ttemrehs"></a>
+</div>
 
-	<div id="contact">
-		<span class="text"></span>
-		<a href="#" id="email_link" target="_blank" class="email" data-user="leanahtan" data-website="em.ttemrehs"></a>
-	</div>
-
-	<!-- Cool effects. -->
-	<div id="cover">
-		<img src="images/ajax.gif" alt="">
-	</div>
+<!-- Cool effects. -->
+<div id="cover">
+	<img src="images/ajax.gif" alt="">
+</div>
 
 </body>
 </html>
