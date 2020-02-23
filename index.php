@@ -4,7 +4,8 @@
 	<title>Nathanael Shermett | Web &amp; Software Guru</title>
 
 	<meta name="author" content="Nathanael Shermett">
-	<meta name="description" content="Nathanael Shermett is a professional web and software developer.">
+	<meta name="description"
+		  content="Nathanael Shermett is a full-Stack web application and software developer, a pianist, and a veteran. He has 15+ years of experience in the software industry. He is passionate about technology (especially artificial intelligence), learning, and pursuing new and innovative ideas.">
 	<meta name="keywords"
 		  content="Nathanael Shermett, Shermett, Soldier, Web Developer, Software Developer, Pianist, PHP, C#, C++, .NET, Symfony, CodeIgniter, MySQL, HTML5, CSS3, JavaScript, jQuery, Christian">
 	<meta name="revisit-after" content="3 days">
@@ -22,19 +23,19 @@
 			"givenName" :     "Nathanael",
 			"familyName" :    "Shermett",
 			"alumniOf" :      {
-				"@type" :    "CollegeOrUniversity",
-				"name" :     "Arizona State University"
+				"@type" : "CollegeOrUniversity",
+				"name" :  "Arizona State University"
 			},
 			"birthPlace" :    "Tucson, Arizona",
-			"description" :   "Nathanael Shermett is a full-Stack web application and software developer, a pianist, and a veteran. He has 15+ years of experience in the software industry. He is passionate about technology (especially artificial intelligence), learning, and developing innovative ideas.",
+			"description" :   "Nathanael Shermett is a full-Stack web application and software developer, a pianist, and a veteran. He has 15+ years of experience in the software industry. He is passionate about technology (especially artificial intelligence), learning, and pursuing new and innovative ideas.",
 			"hasCredential" : [
 				{
 					"@type" :              "EducationalOccupationalCredential",
 					"name" :               "B.S. Criminology and Criminal Justice",
 					"credentialCategory" : ["Degree", "Bachelor of Science"],
 					"recognizedBy" :       {
-						"@type" :    "CollegeOrUniversity",
-						"name" :     "Arizona State University"
+						"@type" : "CollegeOrUniversity",
+						"name" :  "Arizona State University"
 					}
 				},
 				{
