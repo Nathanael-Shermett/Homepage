@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Nathanael Shermett | Web &amp; Software Guru</title>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'; object-src 'self'">
+	<meta name="author" content="Nathanael Shermett">
+	<meta name="description"
+		content="Nathanael Shermett an experienced software developer with over 15 years of experience in the industry. In college, he triple majored in Criminology, Psychology, and Spanish. He is also an Army veteran.">
+	<meta name="keywords"
+		content="Software Development, Refactoring, Database Design, Graphic Design, Symfony, API Platform, Next.js/React, Tailwind, PHP, JavaScript, (S)CSS, REST APIs, Testing, SQL, Doctrine, Agile, Git, Jira, Technical Writing, Technical Project Management, Presentations, Spanish">
+	<meta name="revisit-after" content="3 days">
+	<meta name="robots" content="index, follow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+
+	<link rel="shortcut icon" href="images/favicon.ico">
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+		@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+		*, *:before, *:after {
+			box-sizing: border-box;
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+
+		html {
+			background: #012 url('images/background.avif') no-repeat center center fixed;
+			background-size: cover;
+		}
+
+		body {
+			background-color: #00060C;
+			background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .75) 100%);
+			background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .75) 100%);
+			background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .75) 100%);
+			border-right: 1px solid #FFF;
+			color: #FFF;
+			display: inline-block;
+			font-family: Lato, sans-serif;
+			font-weight: 300;
+			height: 100vh;
+			margin: 0;
+			overflow: hidden;
+			padding: 20vh 10vw 3vw 3vw;
+			width: calc(100% - (100vh / 3 + 3vh));
+		}
+
+		a {
+			outline: 0;
+		}
+
+		h1 {
+			cursor: default;
+			font-size: 5vw;
+			font-family: Lato, sans-serif;;
+			font-weight: 300;
+			display: block;
+			margin: 0;
+			text-shadow: 0 5px 5px #000;
+		}
+
+		ul#tagline {
+			display: block;
+			cursor: default;
+			margin: 0;
+			padding: 0;
+		}
+
+		ul#tagline li {
+			display: inline;
+			font-size: 2vw;
+			font-family: Lato, sans-serif;
+			font-weight: 300;
+			text-shadow: 0 5px 5px #000;
+		}
+
+		ul#tagline li::after {
+			content: "\00B7";
+			margin: 0 .75vw;
+			opacity: .5;
+		}
+
+		ul#tagline li:first-child::before {
+			content: "Software ";
+		}
+
+		ul#tagline li:last-child::after {
+			content: "";
+		}
+
+		#contact {
+			cursor: default;
+			font-size: calc(1.5vw);
+			margin-top: 6vw;
+		}
+
+		#contact::before {
+			content: 'For all inquiries, please email me at:';
+			color: #89A !important;
+			text-shadow: 0 5px 5px #000;
+		}
+
+		#contact .email {
+			color: #FFF;
+			display: block;
+			text-decoration: none;
+			text-shadow: 0 5px 5px #000;
+		}
+
+		#contact .email:hover {
+			color: #89A;
+		}
+
+		#social {
+			align-items: center;
+			justify-content: space-evenly;
+			display: flex;
+			flex-direction: column;
+			height: 100vh;
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: calc(100vh / 3 + 3vh);
+		}
+
+		#social a {
+			align-items: center;
+			justify-content: center;
+			background-color: #000;
+			border-radius: 3vh;
+			color: #FFF;
+			display: flex;
+			font-size: calc(100vh / 4);
+			height: calc((100vh / 3) - 3vh);
+			opacity: .25;
+			text-decoration: none;
+			width: calc((100vh / 3) - 3vh);
+		}
+
+		#social a:hover {
+			cursor: pointer !important;
+			opacity: .5;
+		}
+
+		#social a:active {
+			opacity: 1;
+		}
+
+		noscript div {
+			align-items: center;
+			box-shadow: 0 0 10vmax #0FF6 inset;
+			background-color: #012;
+			color: #FFF6;
+			display: flex;
+			font-family: Lato, sans-serif;
+			font-size: 3vw;
+			font-weight: 300;
+			justify-content: center;
+			height: 100vh;
+			left: 0;
+			padding: 20vmin;
+			position: fixed;
+			top: 0;
+			width: 100vw;
+			z-index: 10000;
+		}
+
+		/* Media queries. */
+		@media (max-width: 150vh) {
+			body {
+				display: flex;
+				justify-content: space-evenly;
+				flex-direction: column;
+			}
+
+			h1 {
+				font-size: 5vw;
+				text-align: center;
+			}
+
+			#contact, #contact.email {
+				font-size: 2vw;
+				text-align: center;
+			}
+
+			#tagline {
+				font-size: 2vw;
+				text-align: center;
+			}
+		}
+
+		@media (orientation: portrait) {
+			body {
+				background-image: none;
+				border-right: none;
+				padding: 0;
+				text-align: center;
+				width: 100vw;
+			}
+
+			h1 {
+				background-color: rgba(0, 0, 0, .5);
+				border-bottom: 1px solid rgba(255, 255, 255, .25);
+				font-size: 10vw;
+				font-weight: 400;
+				margin: 0;
+				padding: 5vh 0 3vh;
+				width: 100vw;
+			}
+
+			ul#tagline {
+				margin: 7vh 0;
+				width: 100vw;
+			}
+
+			ul#tagline li {
+				font-size: 5vw;
+			}
+
+			ul#tagline li:first-child::before {
+				content: "";
+			}
+
+			ul#tagline li::after {
+				content: "/";
+				margin: 0 1vw;
+				opacity: .25;
+			}
+
+			#contact {
+				font-size: 7vw;
+				padding: 5vh;
+				width: 100vw;
+			}
+
+			#contact::before {
+				font-size: 6vw;
+				content: "For all inquiries:";
+			}
+
+			#contact .email {
+				display: block;
+			}
+
+			#social {
+				display: flex;
+				flex-direction: row;
+				position: static;
+				width: 100%;
+			}
+
+			#social a {
+				border: 1px solid #FFF6;
+				border-radius: 3vw;
+				font-size: 15vw;
+				height: 22vw;
+				opacity: .5;
+				width: 22vw;
+			}
+
+			#social a:hover {
+				opacity: .75;
+			}
+
+			noscript div {
+				font-size: 24px;
+				padding: 24px;
+			}
+		}
+	</style>
+
+	<!-- Schema.org Stuff -->
+	<script type='application/ld+json'>
+		{
+			"@type" : "Person",
+			"givenName" : "Nathanael",
+			"familyName" : "Shermett",
+			"alumniOf" : {
+				"@type" : "CollegeOrUniversity",
+				"name" : "Arizona State University"
+			},
+			"birthPlace" : "Tucson, Arizona",
+			"description" : "Nathanael Shermett an experienced software developer with over 15 years of experience in the industry. In college, he triple majored in Criminology, Psychology, and Spanish. He is also an Army veteran.",
+			"hasCredential" : [
+				{
+					"@type" : "EducationalOccupationalCredential",
+					"name" : "B.S. Criminology and Criminal Justice",
+					"credentialCategory" : ["Degree", "Bachelor of Science"],
+					"recognizedBy" : {
+						"@type" : "CollegeOrUniversity",
+						"name" : "Arizona State University"
+					}
+				}, {
+					"@type" : "EducationalOccupationalCredential",
+					"name" : "B.A. Psychology",
+					"credentialCategory" : ["Degree", "Bachelor of Arts"],
+					"recognizedBy" : {
+						"@type" : "CollegeOrUniversity",
+						"name" : "Arizona State University"
+					}
+				}, {
+					"@type" : "EducationalOccupationalCredential",
+					"name" : "B.A. Spanish (linguistics)",
+					"credentialCategory" : ["Degree", "Bachelor of Arts"],
+					"recognizedBy" : {
+						"@type" : "CollegeOrUniversity",
+						"name" : "Arizona State University"
+					}
+				}
+			],
+			"gender" : "http://schema.org/Male",
+			"height" : "71 inches",
+			"knowsAbout" : [
+				"Software Development",
+				"Refactoring",
+				"Database Design",
+				"Graphic Design",
+				"Symfony",
+				"API Platform",
+				"Next.js/React",
+				"Tailwind",
+				"PHP",
+				"JavaScript",
+				"(S)CSS",
+				"REST APIs",
+				"Testing",
+				"SQL",
+				"Doctrine",
+				"Agile",
+				"Git",
+				"Jira",
+				"Technical Writing",
+				"Technical Project Management",
+				"Presentations",
+				"Spanish"
+			],
+			"knowsLanguage" : ["en", "es"],
+			"image" : "https://nathanael.shermett.me/images/nathanael.png",
+			"jobTitle" : ["Software Engineer"],
+			"memberOf" : ["United States Army", "Arizona State University"],
+			"url" : "https://nathanael.shermett.me",
+			"sameAs" : [
+				"https://www.linkedin.com/in/nathanaelshermett", "https://github.com/Nathanael-Shermett"
+			]
+		}
+	</script>
+</head>
+<body>
+
+<noscript>
+	<div>You must enable JavaScript to view this page.</div>
+</noscript>
+
+<header>
+	<h1>Nathanael Shermett</h1>
+
+	<ul id="tagline">
+		<li>
+			Developer
+		</li>
+		<li>
+			Pianist
+		</li>
+		<li>
+			Veteran
+		</li>
+	</ul>
+</header>
+
+<div id="social">
+	<a target="_blank"
+		href="https://www.linkedin.com/in/NathanaelShermett"
+		title="LinkedIn"
+		class="fa-brands fa-linkedin">
+	</a>
+	<a target="_blank"
+		href="https://github.com/Nathanael-Shermett"
+		title="GitHub"
+		class="fa-brands fa-github">
+	</a>
+	<a id="email_icon"
+		target="_blank"
+		href="#" title="Email"
+		class="fa-solid fa-envelope">
+	</a>
+</div>
+
+<div id="contact">
+	<a href="#" id="email_link" target="_blank" class="email" data-user="leanahtan" data-website="em.ttemrehs"></a>
+</div>
+
+<script>
+	// Transform the email links into hyperlinks.
+	const reversed_user = document.getElementById('email_link').getAttribute('data-user').split('').reverse().join('');
+	const reversed_website = document.getElementById('email_link').getAttribute('data-website').split('').reverse().join('');
+	const email = reversed_user + '@' + reversed_website;
+	document.getElementById('email_link').setAttribute('href', 'mailto:' + email);
+	document.getElementById('email_link').text = email;
+	document.getElementById('email_icon').setAttribute('href', 'mailto:' + email);
+</script>
+
+</body>
+</html>
