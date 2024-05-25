@@ -1,5 +1,5 @@
 <IfModule mod_headers.c>
-  <FilesMatch ".(avif|css|gif|jpg|js|png)$">
+  <FilesMatch ".(avif|css|gif|html|jpg|js|png)$">
     Header append Cache-Control: max-age=31536000
   </FilesMatch>
 </IfModule>
