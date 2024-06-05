@@ -6,9 +6,11 @@
 
 <IfModule mod_rewrite.c>
 	RewriteEngine On
+	RewriteCond %{HTTP_HOST} ^(.+\.)*xyteran\.com [NC,OR]
 	RewriteCond %{HTTP_HOST} ^(.+\.)*nathanaelshermett\.com [NC,OR]
 	RewriteCond %{HTTP_HOST} ^(.+\.)*nathanaelshermett\.me [NC,OR]
 	RewriteCond %{HTTP_HOST} ^(.+\.)*shermett\.com [NC,OR]
+	RewriteCond %{HTTP_HOST} ^(.+\.)*xyteran\.com [NC,OR]
 	RewriteCond %{HTTP_HOST} ^(?!nathanael\.)(.+\.){0,1}shermett\.me [NC,OR] # Zero or one subdomain, unless the subdomain is "nathanael".
 	RewriteCond %{HTTP_HOST} ^(.+\.){2,}shermett\.me [NC] # Two or more subdomains, even if one is "nathanael".
 	RewriteRule ^(.*)$ https://nathanael.shermett.me/$1 [L,R=301]
