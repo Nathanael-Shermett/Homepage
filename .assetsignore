@@ -1,0 +1,8 @@
+.git
+.gitignore
+.htaccess
+.idea
+.wrangler
+LICENSE
+README.md
+wrangler.jsonc
