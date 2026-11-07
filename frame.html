@@ -17,6 +17,7 @@ const s = Number(p.get('s') || 1);
 f.style.width = p.get('w') + 'px';
 f.style.height = p.get('h') + 'px';
 f.style.transform = 'scale(' + s + ')';
+f.style.colorScheme = p.get('cs') || 'normal';
 f.src = p.get('url');
 </script>
 </body>
