@@ -17,8 +17,17 @@ const s = Number(p.get('s') || 1);
 f.style.width = p.get('w') + 'px';
 f.style.height = p.get('h') + 'px';
 f.style.transform = 'scale(' + s + ')';
-f.style.colorScheme = p.get('cs') || 'normal';
-f.src = p.get('url');
+if (p.get('raw')) {
+	fetch(p.get('raw'), { cache: 'no-store' }).then(r => r.text()).then(t => {
+		t = t.replace('<head>', '<head><base href="' + p.get('url') + '">');
+		if (p.get('force') === 'dark') {
+			t = t.split('prefers-color-scheme: light').join('min-width: 99999px');
+		}
+		f.srcdoc = t;
+	});
+} else {
+	f.src = p.get('url');
+}
 </script>
 </body>
 </html>
