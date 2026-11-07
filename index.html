@@ -1,22 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Nathanael Shermett | Product Manager</title>
-
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'; object-src 'self'">
-	<meta name="author" content="Nathanael Shermett">
-	<meta name="description"
-		content="Chicago-based software consultant, pianist, veteran, and political aficionado. Passionate about coffee, space movies, and saving the world.">
-	<meta name="keywords"
-		content="Chicago, FinTech, Piano, Politics, Product Management, Software Engineering, U.S. Army">
-	<meta name="revisit-after" content="3 days">
-	<meta name="robots" content="index, follow">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
 
-	<link rel="canonical" href="https://nathanael.shermett.me">
+	<title>Nathanael Shermett | Product Manager in Chicago</title>
+
+	<meta name="author" content="Nathanael Shermett">
+	<meta name="description" content="Chicago-based product manager, software engineer, veteran, pianist, and political aficionado. Passionate about coffee, space movies, and saving the world.">
+	<meta name="robots" content="index, follow">
+	<meta name="theme-color" content="#001122" media="(prefers-color-scheme: dark)">
+	<meta name="theme-color" content="#E6ECF2" media="(prefers-color-scheme: light)">
+
+	<!-- Open Graph -->
+	<meta property="og:type" content="profile">
+	<meta property="og:site_name" content="Nathanael Shermett">
+	<meta property="og:title" content="Nathanael Shermett">
+	<meta property="og:description" content="Chicago-based product manager, software engineer, veteran, pianist, and political aficionado. Passionate about coffee, space movies, and saving the world.">
+	<meta property="og:url" content="https://nathanael.shermett.me/">
+	<meta property="og:image" content="https://nathanael.shermett.me/images/nathanael.jpg">
+	<meta property="og:image:type" content="image/jpeg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="1200">
+	<meta property="og:image:alt" content="Nathanael Shermett leaning on a white piano">
+	<meta property="og:locale" content="en_US">
+	<meta property="profile:first_name" content="Nathanael">
+	<meta property="profile:last_name" content="Shermett">
+
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Nathanael Shermett">
+	<meta name="twitter:description" content="Chicago-based product manager, software engineer, veteran, pianist, and political aficionado. Passionate about coffee, space movies, and saving the world.">
+	<meta name="twitter:image" content="https://nathanael.shermett.me/images/nathanael.jpg">
+	<meta name="twitter:image:alt" content="Nathanael Shermett leaning on a white piano">
+
+	<link rel="canonical" href="https://nathanael.shermett.me/">
 	<link rel="me" href="https://mastodon.social/@NathanaelShermett">
-	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="icon" href="images/favicon.ico">
 
 	<style>
 		/* Begin Google Fonts */
@@ -59,6 +80,36 @@
 
 		:root {
 			--font: Lato, system-ui, "Segoe UI", Roboto, Inter, sans-serif;
+			--text: #FFF;
+			--muted: #A9B8C8;
+			--accent: #8FC7FF;
+			--panel: rgba(6, 12, 20, .55);
+			--border: rgba(255, 255, 255, .14);
+			--button: rgba(255, 255, 255, .06);
+			--button-hover: rgba(255, 255, 255, .14);
+			--space: clamp(1.25rem, .75rem + 2vmin, 3.5rem);
+			--page: #012;
+			--overlay: radial-gradient(ellipse at center, rgba(0, 10, 20, .2) 0%, rgba(0, 6, 12, .8) 100%);
+			--shadow: 0 30px 80px rgba(0, 0, 0, .45);
+			--ring: rgba(255, 255, 255, .85);
+			color-scheme: light dark;
+		}
+
+		/* Light mode */
+		@media (prefers-color-scheme: light) {
+			:root {
+				--text: #0B1520;
+				--muted: #4A5B6C;
+				--accent: #0B5CAD;
+				--panel: rgba(255, 255, 255, .72);
+				--border: rgba(10, 20, 30, .12);
+				--button: rgba(10, 20, 30, .04);
+				--button-hover: rgba(10, 20, 30, .1);
+				--page: #E6ECF2;
+				--overlay: radial-gradient(ellipse at center, rgba(240, 245, 250, .35) 0%, rgba(225, 233, 241, .85) 100%);
+				--shadow: 0 30px 80px rgba(20, 40, 60, .25);
+				--ring: #FFF;
+			}
 		}
 
 		*, *:before, *:after {
@@ -71,391 +122,384 @@
 		}
 
 		html {
-			background: #012 url('images/background.avif') no-repeat center center fixed;
-			background-size: cover;
+			background-color: var(--page);
 		}
 
 		body {
-			background-color: #00060C;
-			background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .75) 100%);
-			background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .75) 100%);
-			background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .75) 100%);
-			border-right: 1px solid #FFF;
-			color: #FFF;
-			display: flex;
-			justify-content: space-evenly;
-			flex-direction: column;
+			color: var(--text);
+			display: grid;
 			font-family: var(--font);
 			font-weight: 300;
-			height: 100dvh;
 			margin: 0;
-			overflow: hidden;
-			padding: 20vh 3vw 3vw 3vw;
-			width: calc(100% - (100dvh / 3 + 3dvh));
+			min-height: 100vh;
+			min-height: 100svh;
+			padding: var(--space);
+			place-items: center;
+		}
+
+		/* Background */
+		body::before {
+			background:
+				var(--overlay),
+				var(--page) url('images/background.avif') no-repeat center / cover;
+			content: "";
+			inset: 0;
+			position: fixed;
+			z-index: -1;
 		}
 
 		a {
+			color: inherit;
 			outline: 0;
+		}
+
+		a:focus-visible {
+			outline: 2px solid var(--accent);
+			outline-offset: 3px;
+		}
+
+		/* Card */
+		main {
+			-webkit-backdrop-filter: blur(18px) saturate(140%);
+			backdrop-filter: blur(18px) saturate(140%);
+			align-items: center;
+			background-color: var(--panel);
+			border: 1px solid var(--border);
+			border-radius: clamp(1.25rem, 3vmin, 2.5rem);
+			box-shadow: var(--shadow);
+			display: flex;
+			flex-direction: column;
+			gap: var(--space);
+			max-width: 40rem;
+			padding: clamp(1.75rem, 5vmin, 6rem);
+			text-align: center;
+			width: 100%;
+		}
+
+		.portrait {
+			aspect-ratio: 1;
+			border: 3px solid var(--ring);
+			border-radius: 50%;
+			box-shadow: 0 10px 30px rgba(0, 0, 0, .4);
+			flex: none;
+			height: auto;
+			object-fit: cover;
+			width: clamp(7rem, 18vmin, 11rem);
+		}
+
+		.content {
+			display: flex;
+			flex-direction: column;
+			gap: var(--space);
+			width: 100%;
 		}
 
 		h1 {
 			cursor: default;
-			font-size: 5vw;
-			font-family: var(--font);
+			font-size: clamp(2.25rem, 1rem + 5.5vmin, 7rem);
 			font-weight: 300;
-			display: block;
+			letter-spacing: -.01em;
+			line-height: 1.05;
 			margin: 0;
-			text-shadow: 0 5px 5px #000;
+			text-wrap: balance;
 		}
 
 		ul#tagline {
-			display: block;
+			color: var(--muted);
 			cursor: default;
-			margin: 0;
+			display: flex;
+			flex-wrap: wrap;
+			font-size: clamp(1rem, .75rem + 1.4vmin, 2.25rem);
+			justify-content: center;
+			list-style: none;
+			margin: .6em 0 0;
 			padding: 0;
 		}
 
-		ul#tagline li {
-			display: inline;
-			font-size: 2vw;
-			font-family: var(--font);
-			font-weight: 300;
-			text-shadow: 0 5px 5px #000;
-		}
-
-		ul#tagline li::after {
+		ul#tagline li + li::before {
 			content: "\00B7";
-			margin: 0 .75vw;
-			opacity: .5;
+			margin: 0 .6em;
+			opacity: .6;
 		}
 
-		ul#tagline li:last-child::after {
-			content: "";
+		.bio {
+			color: var(--muted);
+			font-size: clamp(1rem, .75rem + 1.1vmin, 2rem);
+			line-height: 1.5;
+			margin: 0;
+			max-width: 34em;
 		}
 
-		ul#tagline li .short {
-			display: none;
-		}
-
+		/* Contact */
 		#contact {
+			border-top: 1px solid var(--border);
 			cursor: default;
-			font-size: calc(1.5vw);
-			margin-top: 6vw;
+			display: flex;
+			flex-direction: column;
+			font-size: clamp(1rem, .75rem + 1.1vmin, 2rem);
+			gap: .35em;
+			padding-top: var(--space);
 		}
 
-		#contact::before {
-			content: 'For all inquiries, please email me at:';
-			color: #89A !important;
-			text-shadow: 0 5px 5px #000;
+		#contact .label {
+			color: var(--muted);
+			font-size: .85em;
+			letter-spacing: .08em;
+			text-transform: uppercase;
 		}
 
 		#contact .email {
-			color: #FFF;
-			display: block;
+			-webkit-user-select: text;
+			-moz-user-select: text;
+			-ms-user-select: text;
+			user-select: text;
+			font-weight: 400;
 			text-decoration: none;
-			text-shadow: 0 5px 5px #000;
-			width: 0;
 		}
 
 		#contact .email:hover {
-			color: #89A;
+			color: var(--accent);
 		}
 
+		/* Social */
 		#social {
-			align-items: center;
-			justify-content: space-evenly;
 			display: flex;
-			flex-direction: column;
-			height: 100dvh;
-			position: absolute;
-			right: 0;
-			top: 0;
-			width: calc(100dvh / 3 + 3dvh);
+			flex-wrap: wrap;
+			font-size: clamp(.95rem, .7rem + .8vmin, 1.75rem);
+			gap: .75em;
+			justify-content: center;
 		}
 
 		#social a {
 			align-items: center;
-			background-color: #000;
-			border-radius: 2vh;
-			color: #FFF;
-			display: flex;
-			font-size: calc(100dvh / 4);
-			height: calc((100dvh / 3) - 3dvh);
-			justify-content: center;
-			opacity: .35;
+			background-color: var(--button);
+			border: 1px solid var(--border);
+			border-radius: 999px;
+			display: inline-flex;
+			font-weight: 400;
+			gap: .6em;
+			padding: .7em 1.3em;
 			text-decoration: none;
-			width: calc((100dvh / 3) - 3dvh);
+			transition: background-color .2s, border-color .2s, transform .2s;
 		}
 
 		#social a:hover {
-			cursor: pointer !important;
-			opacity: .5;
-			transition: opacity;
-			transition-duration: .25s;
+			background-color: var(--button-hover);
+			border-color: var(--muted);
+			transform: translateY(-1px);
 		}
 
 		#social a:active {
-			opacity: 1;
+			transform: none;
 		}
 
-		#social a svg {
-			fill: #FFF;
-			padding: 3dvh;
+		#social svg {
+			fill: currentColor;
+			flex: none;
+			height: 1.15em;
+			width: 1.15em;
 		}
 
-		noscript div {
-			align-items: center;
-			box-shadow: 0 0 10vmax #0FF6 inset;
-			background-color: #012;
-			color: #FFF6;
-			display: flex;
-			font-family: var(--font);
-			font-size: 3vw;
-			font-weight: 300;
-			justify-content: center;
-			height: 100vh;
-			left: 0;
-			padding: 20vmin;
-			position: fixed;
-			top: 0;
-			width: 100vw;
-			z-index: 10000;
+		#contact noscript {
+			color: var(--muted);
+			font-size: .85em;
 		}
 
 		/* Media queries. */
-		@media (min-width: 300vh) {
-			h1 {
-				font-size: 12vh;
+		@media (min-width: 60rem) and (orientation: landscape) {
+			main {
+				flex-direction: row;
+				gap: calc(var(--space) * 1.5);
+				max-width: none;
+				text-align: left;
+				width: auto;
 			}
 
-			#contact, #contact .email {
-				font-size: 5vh;
+			.portrait {
+				align-self: flex-start;
+				width: clamp(9rem, 22vmin, 14rem);
 			}
 
-			ul#tagline li {
-				font-size: 5vh;
-			}
-		}
-
-		@media (max-width: 200vh) {
-			h1 {
-				font-size: 5vw;
-				text-align: center;
-			}
-
-			#contact, #contact .email {
-				font-size: 2vw;
-				text-align: center;
-			}
-
-			#contact .email {
-				width: 100%;
-			}
-
-			#tagline {
-				font-size: 2vw;
-				text-align: center;
+			ul#tagline, #social {
+				justify-content: flex-start;
 			}
 		}
 
-		@media (orientation: portrait) {
-			body {
-				background-image: none;
-				border-right: none;
-				padding: 0;
-				text-align: center;
-				width: 100vw;
-			}
-
-			h1 {
-				background-color: rgba(0, 0, 0, .5);
-				border-bottom: 1px solid rgba(255, 255, 255, .25);
-				font-size: 10vw;
-				font-weight: 400;
-				margin: 0;
-				padding: 5vh 0 3vh;
-				width: 100vw;
-			}
-
+		@media (max-width: 30rem) {
 			ul#tagline {
-				margin: 7vh 0;
-				width: 100vw;
+				flex-direction: column;
+				gap: .2em;
 			}
 
-			ul#tagline li {
-				font-size: 5vw;
-			}
-
-			ul#tagline li .short {
-				display: inline;
-			}
-
-			ul#tagline li .long {
-				display: none;
-			}
-
-			ul#tagline li::after {
-				content: "/";
-				margin: 0 1vw;
-				opacity: .25;
-			}
-
-			#contact {
-				font-size: 7vw;
-				padding: 5vh;
-				width: 100vw;
-			}
-
-			#contact::before {
-				font-size: 6vw;
-				content: "For all inquiries:";
-			}
-
-			#contact .email {
-				display: block;
+			ul#tagline li + li::before {
+				content: none;
 			}
 
 			#social {
-				display: flex;
-				flex-direction: row;
-				position: static;
-				width: 100%;
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
 			}
 
 			#social a {
-				border: 1px solid #FFF6;
-				border-radius: 3vw;
-				font-size: 15vw;
-				height: 22vw;
-				opacity: .5;
-				width: 22vw;
+				border-radius: 1rem;
+				flex-direction: column;
+				gap: .4em;
+				padding: .8em .5em;
+			}
+
+			#social svg {
+				height: 1.4em;
+				width: 1.4em;
+			}
+		}
+
+		@media (prefers-reduced-motion: reduce) {
+			#social a {
+				transition: none;
 			}
 
 			#social a:hover {
-				opacity: .75;
-			}
-
-			noscript div {
-				font-size: 24px;
-				padding: 24px;
+				transform: none;
 			}
 		}
 	</style>
 
-	<script type='application/ld+json'>
+	<script type="application/ld+json">
 		{
-			"@type" : "Person",
-			"alumniOf" : {
-				"@type" : "CollegeOrUniversity",
-				"name" : "Arizona State University"
+			"@context": "https://schema.org",
+			"@type": "Person",
+			"@id": "https://nathanael.shermett.me/#person",
+			"name": "Nathanael Shermett",
+			"givenName": "Nathanael",
+			"familyName": "Shermett",
+			"url": "https://nathanael.shermett.me/",
+			"image": "https://nathanael.shermett.me/images/nathanael.jpg",
+			"description": "Chicago-based product manager, software engineer, veteran, pianist, and political aficionado. Passionate about coffee, space movies, and saving the world.",
+			"jobTitle": ["Product Manager", "Software Engineer"],
+			"gender": "https://schema.org/Male",
+			"height": "71 in",
+			"birthPlace": {
+				"@type": "Place",
+				"name": "Tucson, Arizona"
 			},
-			"birthPlace" : "Tucson, Arizona",
-			"description" : "Chicago-based product manager, software engineer, veteran, pianist, and political aficionado. Passionate about coffee, space movies, and saving the world.",
-			"familyName" : "Shermett",
-			"gender" : "https://schema.org/Male",
-			"givenName" : "Nathanael",
-			"hasCredential" : [
+			"homeLocation": {
+				"@type": "Place",
+				"name": "Chicago, Illinois"
+			},
+			"alumniOf": {
+				"@type": "CollegeOrUniversity",
+				"name": "Arizona State University"
+			},
+			"memberOf": {
+				"@type": "Organization",
+				"name": "United States Army"
+			},
+			"hasCredential": [
 				{
-					"@type" : "EducationalOccupationalCredential",
-					"name" : "B.S. Criminology and Criminal Justice",
-					"credentialCategory" : ["Degree", "Bachelor of Science"],
-					"recognizedBy" : {
-						"@type" : "CollegeOrUniversity",
-						"name" : "Arizona State University"
+					"@type": "EducationalOccupationalCredential",
+					"name": "B.S. Criminology and Criminal Justice",
+					"credentialCategory": "degree",
+					"recognizedBy": {
+						"@type": "CollegeOrUniversity",
+						"name": "Arizona State University"
 					}
-				}, {
-					"@type" : "EducationalOccupationalCredential",
-					"name" : "B.A. Psychology",
-					"credentialCategory" : ["Degree", "Bachelor of Arts"],
-					"recognizedBy" : {
-						"@type" : "CollegeOrUniversity",
-						"name" : "Arizona State University"
+				},
+				{
+					"@type": "EducationalOccupationalCredential",
+					"name": "B.A. Psychology",
+					"credentialCategory": "degree",
+					"recognizedBy": {
+						"@type": "CollegeOrUniversity",
+						"name": "Arizona State University"
 					}
-				}, {
-					"@type" : "EducationalOccupationalCredential",
-					"name" : "B.A. Spanish (linguistics)",
-					"credentialCategory" : ["Degree", "Bachelor of Arts"],
-					"recognizedBy" : {
-						"@type" : "CollegeOrUniversity",
-						"name" : "Arizona State University"
+				},
+				{
+					"@type": "EducationalOccupationalCredential",
+					"name": "B.A. Spanish (Linguistics)",
+					"credentialCategory": "degree",
+					"recognizedBy": {
+						"@type": "CollegeOrUniversity",
+						"name": "Arizona State University"
 					}
 				}
 			],
-			"height" : "71 inches",
-			"image" : "https://nathanael.shermett.me/images/nathanael.png",
-			"jobTitle" : ["Product Manager"],
-			"knowsAbout" : [
-				"Chicago",
+			"knowsAbout": [
+				"Product Management",
+				"Software Engineering",
 				"FinTech",
 				"Piano",
 				"Politics",
-				"Product Management",
-				"Software Engineering",
 				"U.S. Army"
 			],
-			"knowsLanguage" : ["en", "es"],
-			"memberOf" : ["United States Army", "Arizona State University"],
-			"sameAs" : [
+			"knowsLanguage": ["en", "es"],
+			"sameAs": [
 				"https://www.linkedin.com/in/nathanaelshermett",
-				"https://github.com/Nathanael-Shermett"
-			],
-			"url" : "https://nathanael.shermett.me"
+				"https://github.com/Nathanael-Shermett",
+				"https://mastodon.social/@NathanaelShermett"
+			]
 		}
 	</script>
 </head>
 <body>
 
-<noscript>
-	<div>You must enable JavaScript to view this page.</div>
-</noscript>
+<main>
+	<img class="portrait" src="images/avatar.webp" alt="" width="448" height="448">
 
-<header>
-	<h1>Nathanael Shermett</h1>
+	<div class="content">
+		<header>
+			<h1>Nathanael Shermett</h1>
 
-	<ul id="tagline">
-		<li>
-			<span class="short">TPM</span>
-			<span class="long">Product&nbsp;Manager</span>
-		</li>
-		<li>
-			Software&nbsp;Engineer
-		</li>
-		<li>
-			Veteran
-		</li>
-	</ul>
-</header>
+			<ul id="tagline">
+				<li>
+					Product&nbsp;Manager
+				</li>
+				<li>
+					Software&nbsp;Engineer
+				</li>
+				<li>
+					Veteran
+				</li>
+			</ul>
+		</header>
 
-<div id="social">
-	<a target="_blank"
-		href="https://www.linkedin.com/in/NathanaelShermett"
-		title="LinkedIn"
-	>
-		<svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" viewBox="0 0 24 24">
-			<path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
-		</svg>
-	</a>
-	<a target="_blank"
-		href="https://github.com/Nathanael-Shermett"
-		title="GitHub"
-	>
-		<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24">
-			<path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-		</svg>
-	</a>
-	<a id="email_icon"
-		target="_blank"
-		href="#" title="Email"
-	>
-		<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24">
-			<path d="M12 12.713l-11.985-9.713h23.971l-11.986 9.713zm-5.425-1.822l-6.575-5.329v12.501l6.575-7.172zm10.85 0l6.575 7.172v-12.501l-6.575 5.329zm-1.557 1.261l-3.868 3.135-3.868-3.135-8.11 8.848h23.956l-8.11-8.848z" />
-		</svg>
-	</a>
-</div>
+		<p class="bio">Chicago-based pianist and political aficionado. Passionate about coffee, space movies, and saving the world.</p>
 
-<div id="contact">
-	<a href="#" id="email_link" target="_blank" class="email" data-user="leanahtan" data-website="em.ttemrehs"></a>
-</div>
+		<div id="contact">
+			<span class="label">Get in touch</span>
+			<a href="#" id="email_link" class="email" data-user="leanahtan" data-website="em.ttemrehs"></a>
+			<noscript>Turn on JavaScript to see my email address.</noscript>
+		</div>
+
+		<nav id="social" aria-label="Social">
+			<a target="_blank"
+				href="https://www.linkedin.com/in/nathanaelshermett"
+				title="LinkedIn"
+			>
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+					<path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+				</svg>
+				<span>LinkedIn</span>
+			</a>
+			<a target="_blank"
+				href="https://github.com/Nathanael-Shermett"
+				title="GitHub"
+			>
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+					<path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+				</svg>
+				<span>GitHub</span>
+			</a>
+			<a id="email_icon"
+				href="#" title="Email"
+			>
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+					<path d="M12 12.713l-11.985-9.713h23.971l-11.986 9.713zm-5.425-1.822l-6.575-5.329v12.501l6.575-7.172zm10.85 0l6.575 7.172v-12.501l-6.575 5.329zm-1.557 1.261l-3.868 3.135-3.868-3.135-8.11 8.848h23.956l-8.11-8.848z" />
+				</svg>
+				<span>Email</span>
+			</a>
+		</nav>
+	</div>
+</main>
 
 <script>
 	// Transform the email links into hyperlinks.
