@@ -1,6 +1,5 @@
 .git
 .gitignore
-.htaccess
 .idea
 .wrangler
 LICENSE

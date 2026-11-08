@@ -3,12 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'; object-src 'self'">
+	<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; object-src 'self'">
 
 	<title>Nathanael Shermett | Product Manager in Chicago</title>
 
 	<meta name="author" content="Nathanael Shermett">
-	<meta name="description" content="Chicago-based product manager, software engineer, veteran, pianist, and political aficionado. Passionate about coffee, space movies, and saving the world.">
+	<meta name="description" content="Chicago-based product manager, software engineer, and pianist. Passionate about coffee, space movies, politics, and saving the world.">
 	<meta name="robots" content="index, follow">
 	<meta name="theme-color" content="#001122" media="(prefers-color-scheme: dark)">
 	<meta name="theme-color" content="#E6ECF2" media="(prefers-color-scheme: light)">
@@ -17,7 +17,7 @@
 	<meta property="og:type" content="profile">
 	<meta property="og:site_name" content="Nathanael Shermett">
 	<meta property="og:title" content="Nathanael Shermett">
-	<meta property="og:description" content="Chicago-based product manager, software engineer, veteran, pianist, and political aficionado. Passionate about coffee, space movies, and saving the world.">
+	<meta property="og:description" content="Chicago-based product manager, software engineer, and pianist. Passionate about coffee, space movies, politics, and saving the world.">
 	<meta property="og:url" content="https://nathanael.shermett.me/">
 	<meta property="og:image" content="https://nathanael.shermett.me/images/nathanael.jpg">
 	<meta property="og:image:type" content="image/jpeg">
@@ -31,13 +31,14 @@
 	<!-- Twitter -->
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:title" content="Nathanael Shermett">
-	<meta name="twitter:description" content="Chicago-based product manager, software engineer, veteran, pianist, and political aficionado. Passionate about coffee, space movies, and saving the world.">
+	<meta name="twitter:description" content="Chicago-based product manager, software engineer, and pianist. Passionate about coffee, space movies, politics, and saving the world.">
 	<meta name="twitter:image" content="https://nathanael.shermett.me/images/nathanael.jpg">
 	<meta name="twitter:image:alt" content="Nathanael Shermett leaning on a white piano">
 
 	<link rel="canonical" href="https://nathanael.shermett.me/">
 	<link rel="me" href="https://mastodon.social/@NathanaelShermett">
-	<link rel="icon" href="images/favicon.ico">
+	<link rel="icon" href="favicon.ico" sizes="48x48">
+	<link rel="icon" href="images/icon.png" type="image/png" sizes="192x192">
 
 	<style>
 		/* Begin Google Fonts */
@@ -367,76 +368,82 @@
 	<script type="application/ld+json">
 		{
 			"@context": "https://schema.org",
-			"@type": "Person",
-			"@id": "https://nathanael.shermett.me/#person",
-			"name": "Nathanael Shermett",
-			"givenName": "Nathanael",
-			"familyName": "Shermett",
+			"@type": "ProfilePage",
+			"@id": "https://nathanael.shermett.me/#profile",
 			"url": "https://nathanael.shermett.me/",
-			"image": "https://nathanael.shermett.me/images/nathanael.jpg",
-			"description": "Chicago-based product manager, software engineer, veteran, pianist, and political aficionado. Passionate about coffee, space movies, and saving the world.",
-			"jobTitle": ["Product Manager", "Software Engineer"],
-			"gender": "https://schema.org/Male",
-			"height": "71 in",
-			"birthPlace": {
-				"@type": "Place",
-				"name": "Tucson, Arizona"
-			},
-			"homeLocation": {
-				"@type": "Place",
-				"name": "Chicago, Illinois"
-			},
-			"alumniOf": {
-				"@type": "CollegeOrUniversity",
-				"name": "Arizona State University"
-			},
-			"memberOf": {
-				"@type": "Organization",
-				"name": "United States Army"
-			},
-			"hasCredential": [
-				{
-					"@type": "EducationalOccupationalCredential",
-					"name": "B.S. Criminology and Criminal Justice",
-					"credentialCategory": "degree",
-					"recognizedBy": {
-						"@type": "CollegeOrUniversity",
-						"name": "Arizona State University"
+			"mainEntity": {
+				"@type": "Person",
+				"@id": "https://nathanael.shermett.me/#person",
+				"name": "Nathanael Shermett",
+				"givenName": "Nathanael",
+				"familyName": "Shermett",
+				"url": "https://nathanael.shermett.me/",
+				"image": "https://nathanael.shermett.me/images/nathanael.jpg",
+				"description": "Chicago-based product manager, software engineer, and pianist. Passionate about coffee, space movies, politics, and saving the world.",
+				"jobTitle": ["Product Manager", "Software Engineer"],
+				"birthPlace": {
+					"@type": "Place",
+					"name": "Tucson, Arizona"
+				},
+				"homeLocation": {
+					"@type": "Place",
+					"name": "Chicago, Illinois",
+					"address": {
+						"@type": "PostalAddress",
+						"addressLocality": "Chicago",
+						"addressRegion": "IL",
+						"addressCountry": "US"
 					}
 				},
-				{
-					"@type": "EducationalOccupationalCredential",
-					"name": "B.A. Psychology",
-					"credentialCategory": "degree",
-					"recognizedBy": {
-						"@type": "CollegeOrUniversity",
-						"name": "Arizona State University"
-					}
+				"alumniOf": {
+					"@type": "CollegeOrUniversity",
+					"name": "Arizona State University"
 				},
-				{
-					"@type": "EducationalOccupationalCredential",
-					"name": "B.A. Spanish (Linguistics)",
-					"credentialCategory": "degree",
-					"recognizedBy": {
-						"@type": "CollegeOrUniversity",
-						"name": "Arizona State University"
+				"hasCredential": [
+					{
+						"@type": "EducationalOccupationalCredential",
+						"name": "B.S. Criminology and Criminal Justice",
+						"credentialCategory": "degree",
+						"recognizedBy": {
+							"@type": "CollegeOrUniversity",
+							"name": "Arizona State University"
+						}
+					},
+					{
+						"@type": "EducationalOccupationalCredential",
+						"name": "B.A. Psychology",
+						"credentialCategory": "degree",
+						"recognizedBy": {
+							"@type": "CollegeOrUniversity",
+							"name": "Arizona State University"
+						}
+					},
+					{
+						"@type": "EducationalOccupationalCredential",
+						"name": "B.A. Spanish (Linguistics)",
+						"credentialCategory": "degree",
+						"recognizedBy": {
+							"@type": "CollegeOrUniversity",
+							"name": "Arizona State University"
+						}
 					}
-				}
-			],
-			"knowsAbout": [
-				"Product Management",
-				"Software Engineering",
-				"FinTech",
-				"Piano",
-				"Politics",
-				"U.S. Army"
-			],
-			"knowsLanguage": ["en", "es"],
-			"sameAs": [
-				"https://www.linkedin.com/in/nathanaelshermett",
-				"https://github.com/Nathanael-Shermett",
-				"https://mastodon.social/@NathanaelShermett"
-			]
+				],
+				"knowsAbout": [
+					"Product Management",
+					"Software Engineering",
+					"Game Development",
+					"Unreal Engine",
+					"FinTech",
+					"Piano",
+					"Politics"
+				],
+				"knowsLanguage": ["en", "es"],
+				"sameAs": [
+					"https://www.linkedin.com/in/nathanaelshermett",
+					"https://github.com/Nathanael-Shermett",
+					"https://mastodon.social/@NathanaelShermett"
+				]
+			}
 		}
 	</script>
 </head>
@@ -456,13 +463,10 @@
 				<li>
 					Software&nbsp;Engineer
 				</li>
-				<li>
-					Veteran
-				</li>
 			</ul>
 		</header>
 
-		<p class="bio">Chicago-based pianist and political aficionado. Passionate about coffee, space movies, and saving the world.</p>
+		<p class="bio">Chicago-based pianist. Passionate about coffee, space movies, politics, and saving the world.</p>
 
 		<div id="contact">
 			<span class="label">Get in touch</span>

@@ -1,2 +1,4 @@
 User-agent: *
 Disallow: /.well-known/acme-challenge
+
+Sitemap: https://nathanael.shermett.me/sitemap.xml
